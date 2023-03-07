@@ -7,7 +7,7 @@ class Employee
   end
 
   def total_compensation
-    @base_salary + @bonus
+    base_salary + bonus
   end
 
   def benefits
