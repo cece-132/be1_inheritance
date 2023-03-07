@@ -1,9 +1,14 @@
 class Intern
   attr_reader :base_salary
   
-  def initialize(base_salary)
-    @base_salary = base_salary
-  end
+    def initialize(hourly_rate, name, id)
+      @hourly_rate = hourly_rate
+      super(name, id)
+    end
+  
+    def total_compensation
+      hourly_rate * 2000
+    end
 
   def get_coffee
     "Who got the latte?"
